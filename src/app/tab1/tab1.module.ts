@@ -8,10 +8,26 @@ import { Tab1Page } from './tab1.page';
 @NgModule({
   imports: [
     IonicModule,
-    CommonModule,
-    FormsModule,
+    CommonModule,    
+    FormsModule,   
     RouterModule.forChild([{ path: '', component: Tab1Page }])
   ],
   declarations: [Tab1Page]
 })
-export class Tab1PageModule {}
+export class Tab1PageModule {
+
+  constructor() {}
+  
+  doRefresh(event) {
+    debugger
+    console.log('Begin async operation');
+
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      event.target.complete();
+    }, 2000);
+  }
+
+}
+
+

@@ -1,5 +1,7 @@
 {
   "name": "KPMOBILE",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

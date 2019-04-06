@@ -1,0 +1,29 @@
+<ion-header style="margin-bottom: 12%;">             
+    <ion-toolbar>                      
+      <ion-title style="text-align: center;" color="danger">     
+        <!-- <ion-img src="/assets/shapes.svg" style="width:50px; float: left;"></ion-img>  -->
+         Giriş
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content>
+      <ion-grid>
+          <ion-row justify-content-center>
+              <ion-col align-self-center>                  
+                  <div padding>                   
+                    <ion-item>
+                      <ion-input type="password" placeholder="Password"></ion-input>
+                    </ion-item>
+                  </div>
+            
+                  <div padding>
+                    <ion-button size="medium" (click)="Login()" expand="block">Login</ion-button>
+                  </div>
+                  <div padding>
+                      <ion-button size="medium" color="danger" (click)="PrintFinger()" expand="block">Login With Touch ID</ion-button>
+                    </div>
+                </ion-col>
+          </ion-row></ion-grid>
+  </ion-content>
